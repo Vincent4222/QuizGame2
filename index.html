@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--<script src="questions.js"></script>-->
+  </head>
+  <body>
+    <h1>Choisissez un thème!</h1>
+    
+      <nav class="navbar">
+        <button class="navBtn" data-quiz-name="culturegenerale">Culture Générale</button>
+        <button class="navBtn" data-quiz-name="informatique">Informatique</button>
+        <button class="navBtn" data-quiz-name="cinema">Cinema</button>
+      </nav>
+    
+
+    <div class="timer">
+      <h1 id="countdown">30</h1>
+      <p class="paragraph"></p>
+    </div>
+    <div id="quiz-container">
+      <div class="progress-bar-container" id="progress-bar"></div>
+
+      <!--la barre de progression sera injectée ici par JavaScript-->
+      <label for="ProgressBar">File progress:</label>
+
+      <progress id="ProgressBar" max="100" value="0">0%</progress>
+
+      <div class="question" id="question-text">
+        <!-- La question sera injectée ici par JavaScript -->
+      </div>
+      <div class="options" id="options-container">
+        <!-- Les options seront injectées ici par JavaScript -->
+      </div>
+      <div class="button-container">
+        <button id="next-button">Suivant</button>
+      </div>
+    </div>
+    <button id="replay-button" style="display: none">Rejouer</button>
+    <!-- Importe ici ton fichier JavaScript -->
+    <script type="module" src="game.js"></script>
+      
+    
+  </body>
+</html> 
+

@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(42, 40, 39) 0%,
+    rgb(71, 72, 70) 35%,
+    rgb(129, 129, 129) 100%
+  );
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Barre de navigation */
+.navbar .navBtn {
+  background: transparent;
+  margin-top: 50px;
+  border-style: none;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(31, 25, 25);
+}
+
+.navbar button {
+  width: 300px;
+  display: inline-block;
+  background-color: rgb(131, 131, 198);
+  color: azure;
+}
+
+/* Timer ----------------------------------- */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Ajuste la largeur pour éviter qu'il soit trop large */
+  height: 100px;
+  margin: 50px auto; /* Centrage horizontal */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  font-size: 15vw;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 100px;
+  color: #000000;
+  text-shadow: 0 40px 20px rgba(0, 0, 0, 0.4), 0 -1px 1px #dae10c;
+  letter-spacing: -3px;
+}
+
+/* Barre de progression */
+#ProgressBar {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+#ProgressBar::-webkit-progress-value {
+  background-color: black;
+}
+
+/* Texte principal */
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.paragraph {
+  font-size: 35px;
+}
+
+.question {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Options de réponse */
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 boutons par ligne */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Boutons */
+button {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* Limite la largeur */
+  background-color: rgb(70, 67, 69);
+  border-radius: 15px; /* Arrondi plus doux */
+  letter-spacing: 2px;
+  font-style: oblique;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px auto;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px;
+}
+
+/* Boutons corrects / incorrects */
+.correct {
+  background-color: hsl(120, 72%, 23%);
+  color: black;
+}
+
+.incorrect {
+  background-color: rgb(155, 14, 14);
+  color: black;
+}
+
+/* Boutons "Rejouer" et "Suivant" */
+#next-button, #replay-button {
+  display: block;
+  background-color: rgb(51, 46, 46);
+  border: 4px solid black;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin: 20px auto; /* Centrage horizontal */
+  text-align: center;
+}
+
+#countdown {
+  font-size: 30px; /* Ajuste la taille du texte */
+  font-weight: bold;
+  color: white; /* Pour une meilleure visibilité */
+  text-align: center;
+  display: block; /* Assure une bonne mise en page */
+  padding: 10px; /* Évite le débordement */
+  border-radius: 10px; /* Adoucit les bords */
+  min-width: 120px; /* Ajuste la taille minimale pour ne pas tronquer */
+}
+
+#question-text {
+  font-size: 22px;
+  text-align: center;
+  max-width: 90%; /* Empêche le texte de sortir de son conteneur */
+  margin: auto;
+  word-wrap: break-word; /* Évite le débordement */
+}
